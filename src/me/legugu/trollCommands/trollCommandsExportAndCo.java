@@ -46,8 +46,8 @@ public class trollCommandsExportAndCo implements CommandExecutor{
 						if(entityToExport instanceof Player){
 							Location entityLocation = entityToExport.getLocation();
 							Vector vectorAway = entityLocation.toVector().subtract(entityLocation.toVector());
-							double speedToExport = 1.0D;
-							vectorAway.setY(speedToExport);
+							double vSpeedToExport = 1.0D;
+							vectorAway.setY(vSpeedToExport);
 							entityToExport.setVelocity(vectorAway);
 							
 							if(entityToExport instanceof Player){
@@ -61,8 +61,8 @@ public class trollCommandsExportAndCo implements CommandExecutor{
 						} else {
 							Location entityLocation = entityToExport.getLocation();
 							Vector vectorAway = entityLocation.toVector().subtract(entityLocation.toVector());
-							double speedToExport = 1.0D;
-							vectorAway.setY(speedToExport);
+							double vSpeedToExport = 1.0D;
+							vectorAway.setY(vSpeedToExport);
 							entityToExport.setVelocity(vectorAway);
 							
 							if(entityToExport instanceof Player){
